@@ -1,0 +1,64 @@
+/* BUTTON CSS */
+.lang-btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  font-size: 1rem;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+#lang-btn-right {
+  border-radius: 0;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.1s;
+}
+
+button:hover {
+  color: #202020;
+  background-color: #dfd9e9;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+button:active::after {
+  opacity: 0.6;
+  animation: button__click 0.1s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes button__click {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+    background-color: black;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.3);
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+}

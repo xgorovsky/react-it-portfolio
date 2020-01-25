@@ -1,0 +1,24 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "NavInfo": {
+    "title": "Will edit later",
+    "data": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, rem!"
+  },
+  "Home": {
+    "title": "Welcome on my portfolio!"
+  },
+  "Projects": {
+    "title": "Recent projects"
+  },
+  "About": {
+    "title": "About me"
+  },
+  "Contact": {
+    "title": "Get in touch with me!"
+  }
+}
