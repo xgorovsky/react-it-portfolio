@@ -12,22 +12,12 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <div className="container">
-          <div className="wrapper">
-            <div className="home">
-              <Switch>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/projects" component={Projects} />
-                <Route exact path="/about" component={About} />
-                <Route exact path="/contact" component={Contact} />
-              </Switch>
-              <img
-                src="https://miistudio.com.mx/wp-content/uploads/2019/11/pacenos-thumbnail-1.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/projects" component={Projects} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/contact" component={Contact} />
+        </Switch>
       </div>
     </Router>
   );

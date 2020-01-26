@@ -10,7 +10,8 @@
     "data": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, rem!"
   },
   "Home": {
-    "title": "Welcome on my portfolio!"
+    "title": "Welcome on my portfolio!",
+    "mess1": "elko in english"
   },
   "Projects": {
     "title": "Recent projects"

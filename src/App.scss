@@ -190,27 +190,3 @@ header {
     }
   }
 }
-
-@media (max-width: 1280px) {
-  .container {
-    width: 100%;
-    margin: 0 0 0 0;
-    .wrapper {
-      padding: 0 0 0 25px;
-    }
-  }
-  .menu-links {
-    flex-direction: column;
-    height: 80%;
-    justify-content: center;
-    nav {
-      ul {
-        li {
-          font-size: 3rem;
-          height: 70px;
-          width: 360px;
-        }
-      }
-    }
-  }
-}
