@@ -6,20 +6,28 @@
     "contact": "Kontakt"
   },
   "NavInfo": {
-    "title": "Wyedtuje później",
-    "data": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, rem!"
+    "title": "Media społecznościowe",
+    "data": "X | X | X | X"
   },
   "Home": {
-    "title": "FRONT-END DEWELOPER",
-    "mess1": "elko"
+    "title": "IGOR BIEDRAWA",
+    "subtitle": "Front End Developer | Designer | Architekt",
+    "mess1": "Witam na mojej stronie, nie krępuj się, poklikaj trochę!\nZapraszam do przejrzenia moich projektów.",
+    "button": "Zajrzyj tutaj!"
   },
   "Projects": {
-    "title": "Ostatnie projekty"
+    "title": "Ostatnie projekty",
+    "ArchFolio": "Pierwsza kroki w pisaniu stron www\npoczątek przygody z podstawami HTML, CSS oraz JavaScript.\nJest to osobiste portfolio z projektami związanymi z architekturą.",
+    "Weather App v1": "Pierwsza próba stworzenia aplikacji pogodowej, stworzona zgodnie z tutorialem Dev Ed`a, przy użyciu HTML, CSS oraz JavaScript",
+    "Weather App v2": "Druga wersja aplikacji pogodowej.\nNa podstawie zapytania użytkownika pobiera dokładne informacje o pogodzie w konkretnym mieście.\nKorzysta z zewnętrznego API, powstała przy użyciu HTML, CSS, JavaScript oraz React",
+    "Recipe App": "Nie wiesz jak coś ugotować? Recipe App pomoże Ci znaleźć odpowiedni przepis.\nAplikacja korzysta z zewnętrznego API, na podstawie zapytania użytkownika, proponuje różne warianty wskazaneog dania\nTechnologie: HTML, CSS, JavaScript oraz React",
+    "Money Goals App": "Aplikacja służąca do monitorowania swoich wydatków,\npostaw sobie cele i miej kontrolę nad swoimi oszczędnościami!\nAplikacja korzysta z lokalnej pamięci przeglądarki.\nNapisana z użyciem HTML, CSS, JavaScript oraz React.",
+    "Let's talk!": "Jeśli masz ochotę zrealizować razem wspólny projekt\nchcesz pogadać o grach lub po prostu się przywitać\nzapraszam do kontaktu!"
   },
   "About": {
     "title": "O mnie"
   },
   "Contact": {
-    "title": "Skontaktuj się ze mną!"
+    "title": "Nawiąż kontakt!"
   }
 }

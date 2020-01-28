@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navigation from "./Navigation";
 import Hamburger from "./Hamburger";
 import { withRouter, Link } from "react-router-dom";
+import logo from "../img/iblogo.svg";
 
 function Header(props) {
   const [state, setState] = useState({
@@ -48,26 +49,29 @@ function Header(props) {
             state.clicked
               ? { transition: ".1s ease-in" }
               : {
-                  transition: "0 ease-in",
-                  transitionDelay: ".53s",
-                  backgroundColor: "rgba(255,255,255,0.8)"
-                }
+                transition: "0 ease-in",
+                transitionDelay: ".53s",
+                backgroundColor: "rgba(255,255,255,0.8)"
+              }
           }
           className="inner-header"
         >
-          <div className="header__logo">
-            <Link to="/">IGOR BIEDRAWA</Link>
-          </div>
+          <Link to="/">
+            <div className="header__logo">
+              <img src={logo} alt="iblogo" />
+              <p><span style={{ fontWeight: "400" }}>IGOR</span>BIEDRAWA</p>
+            </div>
+          </Link>
           <div className="menu">
             <Hamburger
               disabled={disabled}
-              show={state.clicked}
+              clicked={state.clicked}
               click={handleMenu}
             />
           </div>
         </div>
       </div>
-      <Navigation show={state} />
+      <Navigation clicked={state} />
     </header>
   );
 }

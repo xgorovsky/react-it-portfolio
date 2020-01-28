@@ -15,7 +15,7 @@ import {
 
 export default function Navigation(props) {
   const { t } = useTranslation();
-  const { show } = props;
+  const { clicked } = props;
 
   let nav = useRef(null);
   let openNav = useRef(null);
@@ -27,15 +27,15 @@ export default function Navigation(props) {
   let langBtn = useRef(null);
 
   useEffect(() => {
-    if (show.clicked === false) {
+    if (clicked.clicked === false) {
       closeMenu([openNav, navBackground]);
       gsap.to(nav, {
         duration: 0.8,
         css: { display: "none" }
       });
     } else if (
-      show.clicked === true ||
-      (show.clicked === true && show.firstOpen === null)
+      clicked.clicked === true ||
+      (clicked.clicked === true && clicked.firstOpen === null)
     ) {
       gsap.to(nav, {
         duration: 0,
@@ -52,7 +52,7 @@ export default function Navigation(props) {
       fadeInUp(langBtn);
       floatUp(navOption1, navOption2, navOption3);
     }
-  }, [show]);
+  }, [clicked]);
 
   return (
     <div ref={ref => (nav = ref)} className="navigation-menu">

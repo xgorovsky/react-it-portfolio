@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./css/Hamburger.css";
 export default function Hamburger(props) {
   return (
     <div
@@ -9,18 +9,18 @@ export default function Hamburger(props) {
       <div
         className="hamburger__meat"
         style={
-          props.disabled && props.show
+          props.disabled && props.clicked
             ? {
                 backgroundColor: "lightgray",
                 transform: "rotate(45deg) translateY(300%)",
                 transition: ".7s ease"
               }
-            : props.show
+            : props.clicked
             ? {
                 transform: "rotate(45deg) translateY(300%)",
                 transition: ".7s ease"
               }
-            : null || (props.disabled && !props.show)
+            : null || (props.disabled && !props.clicked)
             ? {
                 backgroundColor: "lightgray",
                 transform: "rotate(0deg)",
@@ -32,7 +32,7 @@ export default function Hamburger(props) {
       <div
         className="hamburger__meat"
         style={
-          props.show
+          props.clicked
             ? { opacity: "0", transition: ".3s ease" }
             : props.disabled
             ? {
@@ -46,18 +46,18 @@ export default function Hamburger(props) {
       <div
         className="hamburger__meat"
         style={
-          props.disabled && props.show
+          props.disabled && props.clicked
             ? {
                 backgroundColor: "lightgray",
                 transform: "rotate(-45deg) translateY(-300%)",
                 transition: ".7s ease"
               }
-            : props.show
+            : props.clicked
             ? {
                 transform: "rotate(-45deg) translateY(-300%)",
                 transition: ".7s ease"
               }
-            : null || (props.disabled && !props.show)
+            : null || (props.disabled && !props.clicked)
             ? {
                 backgroundColor: "lightgray",
                 transform: "rotate(0deg)",

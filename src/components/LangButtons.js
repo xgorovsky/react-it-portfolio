@@ -8,8 +8,14 @@ export default function LangButtons() {
   }
   return (
     <div className="lang-btn-wrapper">
-      <button onClick={() => changeLang("pl")}>PL</button>
-      <button id="lang-btn-right" onClick={() => changeLang("en")}>
+      <button className="lang-btn" onClick={() => changeLang("pl")}>
+        PL
+      </button>
+      <button
+        className="lang-btn"
+        id="lang-btn-right"
+        onClick={() => changeLang("en")}
+      >
         EN
       </button>
     </div>

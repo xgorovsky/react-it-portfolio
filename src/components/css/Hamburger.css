@@ -1,0 +1,14 @@
+.hamburger__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: auto;
+  cursor: pointer;
+}
+
+.hamburger__meat {
+  width: 50px;
+  height: 5px;
+  background-color: #202020;
+  margin: 3px;
+}

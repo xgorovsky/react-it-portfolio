@@ -5,7 +5,7 @@
   justify-content: center;
 }
 
-button {
+.lang-btn {
   font-size: 1rem;
   position: relative;
   width: 50px;
@@ -23,7 +23,7 @@ button {
   border-bottom-right-radius: 50%;
 }
 
-button::after {
+.lang-btn::after {
   content: "";
   position: absolute;
   display: block;
@@ -37,14 +37,14 @@ button::after {
   transition: 0.1s;
 }
 
-button:hover {
+.lang-btn:hover {
   color: #202020;
   background-color: #dfd9e9;
   transition: 0.3s ease-out;
   cursor: pointer;
 }
 
-button:active::after {
+.lang-btn:active::after {
   opacity: 0.6;
   animation: button__click 0.1s ease-out;
   animation-fill-mode: forwards;
