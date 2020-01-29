@@ -1,15 +1,15 @@
 $primary-color: #fdb813;
 $dark-theme: #202020;
 $light-theme: #dfd9e9;
-$rwd: "screen and (max-width: 800px)";
+$rwd: "screen and (max-width: 1025px)";
 
 .cool-btn {
-  width: 168px;
+  font-family: "Muli", sans-serif;
+  width: 180px;
   height: 64px;
   border-radius: 12px;
   border: 2px solid $dark-theme;
   background-color: transparent;
-  margin: 24px 0 0 0;
   transition: all 0.5s ease-in-out;
   font-size: 1rem;
   font-weight: 400;

@@ -6,8 +6,7 @@
     "contact": "Kontakt"
   },
   "NavInfo": {
-    "title": "Media społecznościowe",
-    "data": "X | X | X | X"
+    "title": "Media społecznościowe"
   },
   "Home": {
     "title": "IGOR BIEDRAWA",
@@ -16,18 +15,27 @@
     "button": "Zajrzyj tutaj!"
   },
   "Projects": {
-    "title": "Ostatnie projekty",
+    "title": "Wybrane projekty",
     "ArchFolio": "Pierwsza kroki w pisaniu stron www\npoczątek przygody z podstawami HTML, CSS oraz JavaScript.\nJest to osobiste portfolio z projektami związanymi z architekturą.",
     "Weather App v1": "Pierwsza próba stworzenia aplikacji pogodowej, stworzona zgodnie z tutorialem Dev Ed`a, przy użyciu HTML, CSS oraz JavaScript",
     "Weather App v2": "Druga wersja aplikacji pogodowej.\nNa podstawie zapytania użytkownika pobiera dokładne informacje o pogodzie w konkretnym mieście.\nKorzysta z zewnętrznego API, powstała przy użyciu HTML, CSS, JavaScript oraz React",
     "Recipe App": "Nie wiesz jak coś ugotować? Recipe App pomoże Ci znaleźć odpowiedni przepis.\nAplikacja korzysta z zewnętrznego API, na podstawie zapytania użytkownika, proponuje różne warianty wskazaneog dania\nTechnologie: HTML, CSS, JavaScript oraz React",
     "Money Goals App": "Aplikacja służąca do monitorowania swoich wydatków,\npostaw sobie cele i miej kontrolę nad swoimi oszczędnościami!\nAplikacja korzysta z lokalnej pamięci przeglądarki.\nNapisana z użyciem HTML, CSS, JavaScript oraz React.",
-    "Let's talk!": "Jeśli masz ochotę zrealizować razem wspólny projekt\nchcesz pogadać o grach lub po prostu się przywitać\nzapraszam do kontaktu!"
+    "LetsTalk": "Jeśli masz ochotę zrealizować razem wspólny projekt\nchcesz pogadać o grach lub po prostu się przywitać\nzapraszam do kontaktu!"
   },
   "About": {
     "title": "O mnie"
   },
   "Contact": {
-    "title": "Nawiąż kontakt!"
+    "title": "Skontaktuj się ze mną",
+    "TopText": "MASZ",
+    "RotateText": "PYTANIE",
+    "RotateText2": "ZLECENIE",
+    "RotateText3": "PSA",
+    "RotateText4": "MNIE",
+    "name": "Podaj swoje imię",
+    "email": "Wprowadź poprawny e-mail",
+    "message": "Twoja wiadomość",
+    "submit": "Wyślij"
   }
 }

@@ -6,8 +6,7 @@
     "contact": "Contact"
   },
   "NavInfo": {
-    "title": "Socials",
-    "data": "X | X | X | X"
+    "title": "Socials"
   },
   "Home": {
     "title": "IGOR BIEDRAWA",
@@ -16,18 +15,27 @@
     "button": "Let's take a peak!"
   },
   "Projects": {
-    "title": "Recent projects",
+    "title": "Selected projects",
     "ArchFolio": "My first full self-made project\nSingle page application, with review of my architectural work.\nMade with pure HTML, CSS and just a tiny touch of JavaScript",
     "Weather App v1": "First version of Weather App, logic goes to Dev Ed who's responsible for tutorial of this project\nIt provides basic information about temperature and weather condtitions depending on your location.\nMade with HTML, CSS and JavaScript",
     "Weather App v2": "Second version of Weather App, you can look out for an exact town and receive more detailed info about weather conditions.\nMade with HTML, CSS, JavaScript and React.",
     "Recipe App": "Web app, that fetches meal recipes from external API. \nMade with HTML, CSS, JavaScript and React",
     "Money Goals App": "Web app, which allows you to control how much of your savings you want to allocate on your particular needs\nStack: HTML, CSS+Bootstrap, JavaScript and React.\nYou can manage your goals since app is using localStorage to save your entries",
-    "Let's talk!": "Feel free to reach out whether you're interested in working together, talk about games or just want to say hi."
+    "LetsTalk": "Feel free to reach out whether you're interested in working together,\ntalk about games or just want to say hi."
   },
   "About": {
     "title": "About me"
   },
   "Contact": {
-    "title": "Get in touch with me!"
+    "title": "Get in touch with me",
+    "TopText": "HAVE A",
+    "RotateText": "QUESTION",
+    "RotateText2": "PROJECT",
+    "RotateText3": "CAT",
+    "RotateText4": "NICE DAY",
+    "name": "Full Name",
+    "email": "Enter your valid e-mail",
+    "message": "Your Message",
+    "submit": "Send"
   }
 }

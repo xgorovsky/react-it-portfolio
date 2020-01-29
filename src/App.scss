@@ -3,7 +3,8 @@
 $primary-color: #fdb813;
 $dark-theme: #202020;
 $light-theme: #dfd9e9;
-$rwd: "screen and (max-width: 800px)";
+$rwd: "screen and (max-width: 1025px)";
+$rwdContact: "screen and (max-width: 1025px)";
 
 *,
 *::before,
@@ -22,6 +23,7 @@ body {
 //HEADER
 .header-container {
   height: 100px;
+  background-color: transparent;
   .inner-header {
     padding: 0 48px;
     position: fixed;
@@ -54,7 +56,7 @@ body {
   }
 }
 
-//MENU
+//NAVIGATION
 .navigation-menu {
   z-index: 9;
   top: 0;
@@ -96,6 +98,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+      position: relative;
       .menu-links {
         display: flex;
         justify-content: space-between;
@@ -103,7 +106,8 @@ body {
         @media #{$rwd} {
           flex-direction: column;
           justify-content: space-evenly;
-          height: 70%;
+          padding: 100px 0 0 0;
+          height: 100%;
         }
         nav {
           display: block;
@@ -136,38 +140,18 @@ body {
           }
         }
         .info {
-          color: $light-theme;
+          display: flex;
+          flex-direction: column;
+          align-items: space-between;
+          color: $dark-theme;
           width: 300px;
-          padding: 24px;
           h3 {
+            text-align: left;
+            width: 100%;
             font-size: 1.2rem;
-            margin: 8px auto;
-          }
-          p {
-            margin: 0 auto;
-            font-size: 0.8rem;
-          }
-        }
-      }
-      .locations {
-        position: absolute;
-        font-size: 0.8rem;
-        bottom: -80px;
-        color: $light-theme;
-        margin-top: 16px;
-        font-weight: 600;
-        span {
-          &:first-child {
-            margin-left: 64px;
-          }
-          font-weight: 600;
-          cursor: pointer;
-          margin: 0 32px;
-          transition: 0.4s ease-in-out;
-          &:hover {
-            background-color: $dark-theme;
-            padding: 8px 12px;
-            border-radius: 5px;
+            @media #{$rwd} {
+              text-align: center;
+            }
           }
         }
       }
@@ -234,6 +218,7 @@ body {
       .info-wrapper {
         padding: 32px;
         white-space: pre-wrap;
+        overflow: hidden;
         @media #{$rwd} {
           padding: 24px;
           margin-right: 0;
@@ -246,6 +231,9 @@ body {
           font-weight: 300;
           margin-bottom: 12px;
         }
+        .btn-wrapper {
+          margin: 24px 0;
+        }
       }
     }
   }
@@ -257,7 +245,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 12px 0 48px 0;
+    margin: 0 0 48px 0;
     .title-bg-wrapper {
       overflow: hidden;
       position: relative;
@@ -296,6 +284,170 @@ body {
       justify-content: center;
       @media #{$rwd} {
         gap: 18px;
+      }
+      .btn {
+        width: 100%;
+        .cool-btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+//CONTACT
+.contact {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media #{$rwdContact} {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  white-space: pre-wrap;
+  .first-column {
+    height: inherit;
+    margin: 0 0 0 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    @media #{$rwdContact} {
+      margin: 0 18px;
+    }
+    .catchword-section {
+      color: $dark-theme;
+      .rotate-bucket {
+        position: relative;
+        height: 8rem;
+        width: 50vw;
+        overflow: hidden;
+        margin-bottom: 64px;
+        @media #{$rwdContact} {
+          width: 100%;
+          height: 4rem;
+          margin-bottom: 0px;
+        }
+        h2 {
+          font-size: 6rem;
+          font-weight: 900;
+          position: absolute;
+          @media #{$rwdContact} {
+            font-size: 3rem;
+          }
+        }
+      }
+      .contact-about {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+      }
+      h1 {
+        font-size: 6rem;
+        font-weight: 900;
+        @media #{$rwdContact} {
+          font-size: 3rem;
+        }
+      }
+      p {
+        margin: 24px 0;
+      }
+      .btn {
+        width: 100%;
+        margin: 24px 0;
+      }
+    }
+  }
+  .second-column {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 96px 0 0;
+    @media #{$rwdContact} {
+      margin: 0;
+      width: 100%;
+    }
+    .contact-form {
+      color: $light-theme;
+      width: 100%;
+      height: 90%;
+      border-radius: 12px;
+      background-color: $dark-theme;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      @media #{$rwdContact} {
+        margin-top: 32px;
+        height: 100%;
+        border-radius: 0px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+      }
+      .form-container {
+        width: 80%;
+        height: 100%;
+        overflow: hidden;
+        .form-wrapper {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          justify-content: center;
+          @media #{$rwdContact} {
+            align-items: center;
+          }
+          .form-title h1 {
+            text-transform: uppercase;
+            font-family: "Raleway", sans-serif;
+            color: #fff;
+            font-size: 2rem;
+            padding: 24px 0;
+          }
+          .name,
+          .email,
+          .message {
+            margin: 14px 0;
+            width: 100%;
+            height: 50px;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-family: "Muli", sans-serif;
+            font-size: 0.8rem;
+            background-color: $light-theme;
+            transition: 0.2s ease-in-out;
+            &:focus {
+              transition: 0.2s ease-in-out;
+              background-color: #fff;
+            }
+            &:focus:invalid {
+              transition: 0.2s ease-in-out;
+              border-bottom: 2px solid red;
+            }
+            &:focus:required:valid {
+              transition: 0.2s ease-in-out;
+              border-bottom: 3px solid rgb(17, 223, 17);
+            }
+          }
+          .cool-btn {
+            margin: 14px 0 28px 0;
+            height: 64px;
+            float: right;
+            border-color: $primary-color;
+            color: $light-theme;
+            &:hover {
+              color: $dark-theme;
+              border-color: $dark-theme;
+            }
+          }
+        }
       }
     }
   }

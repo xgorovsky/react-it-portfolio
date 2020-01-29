@@ -1,6 +1,53 @@
 import gsap, { TimelineLite } from "gsap";
 
 const easeIO = "power4.inOut";
+const easeO = "power4.out";
+const easeI = "power4.in";
+
+export const rotateTxt = (el1, el2, el3, el4) => {
+  gsap
+    .timeline({ repeat: -1 })
+    .from(el1, {
+      duration: 1.2,
+      ease: easeO,
+      y: "-100%"
+    })
+    .to(el1, {
+      duration: 1.2,
+      ease: easeI,
+      y: "100%"
+    })
+    .from(el2, {
+      duration: 1.2,
+      ease: easeO,
+      y: "-100%"
+    })
+    .to(el2, {
+      duration: 1.2,
+      ease: easeI,
+      y: "100%"
+    })
+    .from(el3, {
+      duration: 1.2,
+      ease: easeO,
+      y: "-100%"
+    })
+    .to(el3, {
+      duration: 1.2,
+      ease: easeI,
+      y: "100%"
+    })
+    .from(el4, {
+      duration: 1.2,
+      ease: easeO,
+      y: "-100%"
+    })
+    .to(el4, {
+      duration: 1.2,
+      ease: easeI,
+      y: "100%"
+    });
+};
 
 export const fromRight = (el1, el2, el3, el4) => {
   gsap.from([el1, el2, el3, el4], {

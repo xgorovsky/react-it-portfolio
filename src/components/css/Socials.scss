@@ -1,0 +1,25 @@
+$rwd: "screen and (max-width: 800px)";
+
+.socials-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  @media #{$rwd} {
+    justify-content: space-between;
+  }
+  a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 6px 18px 0 0;
+    color: #202020;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    @media #{$rwd} {
+      margin: 16px 2px;
+    }
+    &:hover {
+      color: #dfd9e9;
+      transition: 0.1s ease-in-out;
+      filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
+    }
+  }
+}

@@ -10,15 +10,17 @@ export default function ProjectCard(props) {
     <div className="card">
       <div
         style={{
-          justifyContent: "center",
+          justifyContent: "space-evenly",
           width: "100%",
           height: "100%",
           backgroundColor: "#fdb813"
         }}
         className="card-main"
       >
-        <h1 className="card__title">{title}</h1>
-        <p>{t("Projects." + title)}</p>
+        <div style={{ width: "100%" }} className="text-section">
+          <h1 className="card__title">{title}</h1>
+          <p>{t("Projects." + title)}</p>
+        </div>
         <CoolButton linkTo={"/contact"} title={t("Contact.title")} />
       </div>
     </div>

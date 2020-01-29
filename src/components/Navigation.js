@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import LangButtons from "./LangButtons";
+import Socials from "./Socials";
 import gsap from "gsap";
 
 import {
@@ -100,14 +101,7 @@ export default function Navigation(props) {
             </nav>
             <div ref={ref => (info = ref)} className="info">
               <h3>{t("NavInfo.title")}</h3>
-              <p>{t("NavInfo.data")}</p>
-            </div>
-            <div className="locations">
-              Skills:
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-              <span>React</span>
+              <Socials />
             </div>
             <div ref={ref => (langBtn = ref)}>
               <LangButtons />

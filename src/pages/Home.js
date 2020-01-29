@@ -44,7 +44,7 @@ export default function Home() {
             </Link>
             <h2 ref={ref => (hb = ref)}>{t("Home.subtitle")}</h2>
             <p ref={ref => (pa = ref)}>{t("Home.mess1")}</p>
-            <div ref={ref => (btn = ref)}>
+            <div className="btn-wrapper" ref={ref => (btn = ref)}>
               <CoolButton linkTo={"/projects"} title={t("Home.button")} />
             </div>
           </div>

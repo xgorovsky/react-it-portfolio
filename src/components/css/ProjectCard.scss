@@ -17,6 +17,22 @@ $card-font: "Raleway", sans-serif;
   align-items: center;
   position: relative;
   overflow: hidden;
+  &:hover > .card-main,
+  &:active > .card-main {
+    height: 100%;
+    transition: 0.5s ease;
+  }
+  &:hover > .card__image,
+  &:active > .card__image {
+    transition: 0.5s ease;
+    height: 0;
+  }
+  &:hover > .icons-wrapper,
+  &:active > .icons-wrapper {
+    visibility: visible;
+    transition: 0.5s ease;
+    opacity: 1;
+  }
   &:after {
     content: "";
     position: absolute;
@@ -32,8 +48,11 @@ $card-font: "Raleway", sans-serif;
     overflow: hidden;
     display: flex;
     justify-content: center;
+    position: relative;
+    transition: 0.5s ease;
     img {
-      height: 100%;
+      position: absolute;
+      height: 200px;
     }
   }
   .card-main {
@@ -49,6 +68,35 @@ $card-font: "Raleway", sans-serif;
     }
     p {
       margin: 12px 0 12px 0;
+    }
+  }
+  .icons-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    .card-socials {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      color: $dark-theme;
+      transition: 0.3s ease-in-out;
+      * {
+        margin: 4px;
+      }
+      &:hover {
+        background-color: $dark-theme;
+        color: $light-theme;
+      }
     }
   }
 }
