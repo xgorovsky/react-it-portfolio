@@ -4,6 +4,13 @@ const easeIO = "power4.inOut";
 const easeO = "power4.out";
 const easeI = "power4.in";
 
+export const flashHack = el => {
+  gsap.from(el, {
+    autoAlpha: 0,
+    duration: 0.01
+  });
+};
+
 export const rotateTxt = (el1, el2, el3, el4) => {
   gsap
     .timeline({ repeat: -1 })
@@ -51,8 +58,9 @@ export const rotateTxt = (el1, el2, el3, el4) => {
 
 export const fromRight = (el1, el2, el3, el4) => {
   gsap.from([el1, el2, el3, el4], {
+    autoAlpha: 0,
     duration: 1,
-    x: 100,
+    x: "50%",
     opacity: 0,
     ease: easeIO,
     stagger: {
@@ -87,6 +95,14 @@ export const fadeInUp = el => {
     duration: 1.2,
     delay: 0.2,
     opacity: 0,
+    ease: easeIO
+  });
+};
+
+export const fadeIn = el => {
+  gsap.from(el, {
+    duration: 0.5,
+    autoAlpha: 0,
     ease: easeIO
   });
 };

@@ -19,7 +19,7 @@ export default function Socials(props) {
       </a>
       <a
         rel="noopener noreferrer"
-        href="http://localhost:9999"
+        href="http://facebook.com/igorbiedrawa"
         target="_blank"
         className="card-socials"
         style={{ color: color }}

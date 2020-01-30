@@ -2,7 +2,12 @@ import React, { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import img from "../img/main.svg";
 import CoolButton from "../components/CoolButton";
-import { graphReveal, imgReveal, fromRight } from "../components/Animations";
+import {
+  graphReveal,
+  imgReveal,
+  fromRight,
+  flashHack
+} from "../components/Animations";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -13,17 +18,19 @@ export default function Home() {
   let hb = useRef(null);
   let pa = useRef(null);
   let btn = useRef(null);
+  let cont = useRef(null);
 
   const { t } = useTranslation();
 
   useEffect(() => {
+    flashHack(cont);
     fromRight(ha, hb, pa, btn);
     graphReveal(graphBg, graphBg2);
     imgReveal(graph);
   }, []);
 
   return (
-    <div className="container">
+    <div ref={ref => (cont = ref)} className="container">
       <div className="home-wrapper">
         <div className="first-column">
           <div ref={ref => (graphBg = ref)} className="graphic-background">

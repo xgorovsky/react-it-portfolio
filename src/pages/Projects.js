@@ -8,6 +8,7 @@ import recipeApp from "../img/recipeapp.jpg";
 import weather2App from "../img/weather2app.jpg";
 import weatherApp from "../img/weatherapp.jpg";
 import portfolio from "../img/portfolio.jpg";
+import { flashHack } from "../components/Animations";
 
 export default function Projects() {
   const { t } = useTranslation();
@@ -47,6 +48,7 @@ export default function Projects() {
   let titleBg = useRef(null);
   let title = useRef(null);
   let letsTalk = useRef(null);
+  let cont = useRef(null);
   const projRefs = useRef([]);
   projRefs.current = [];
 
@@ -57,19 +59,20 @@ export default function Projects() {
   };
 
   useEffect(() => {
+    flashHack(cont);
     gsap.from(title, {
       opacity: 0,
-      delay: 0.9
+      delay: 0.6
     });
     gsap.to(titleBg, {
-      delay: 0.4,
+      delay: 0.1,
       duration: 0.5,
       width: "100%",
       transformOrigin: "right",
       ease: "power4.inOut"
     });
     gsap.to(titleBg, {
-      delay: 0.9,
+      delay: 0.6,
       duration: 0.5,
       x: "100%",
       display: "none",
@@ -88,7 +91,7 @@ export default function Projects() {
       ],
       {
         duration: 1,
-        delay: 0.7,
+        delay: 0.2,
         opacity: 0,
         ease: "power4.inOut",
         stagger: {
@@ -99,7 +102,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="container">
+    <div ref={ref => (cont = ref)} className="container">
       <div className="title-flex">
         <div className="title-bg-wrapper">
           <div ref={ref => (titleBg = ref)} className="title-bg" />

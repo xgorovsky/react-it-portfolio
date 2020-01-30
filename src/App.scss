@@ -162,6 +162,7 @@ body {
 //HOME
 
 .container {
+  visibility: hidden;
   height: calc(100vh - 100px);
   .home-wrapper {
     width: 100%;
@@ -296,7 +297,9 @@ body {
 }
 
 //CONTACT
-.contact {
+.contact,
+.about {
+  visibility: hidden;
   width: 100%;
   height: calc(100vh - 100px);
   display: grid;
@@ -446,6 +449,51 @@ body {
               color: $dark-theme;
               border-color: $dark-theme;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+//ABOUT
+.about {
+  .first-column {
+    .image-wrapper {
+      position: relative;
+      overflow: hidden;
+      margin-right: 64px;
+      .image-bg {
+        visibility: hidden;
+        position: absolute;
+        width: 0;
+        height: 100%;
+        background-color: #fff;
+        z-index: 2;
+      }
+      .image {
+        visibility: hidden;
+        z-index: -1;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .second-column {
+    * {
+      margin: 24px 0;
+    }
+    .title {
+      position: relative;
+      overflow: hidden;
+      .btn-wrapper {
+        .show-nav {
+          display: flex;
+          * {
+            margin-right: 2px;
           }
         }
       }
