@@ -1,0 +1,47 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "projects": "Projekty",
+    "about": "O mnie",
+    "contact": "Kontakt"
+  },
+  "NavInfo": {
+    "title": "Media społecznościowe"
+  },
+  "Home": {
+    "title": "IGOR BIEDRAWA",
+    "subtitle": "Front End Developer | Designer | Architekt",
+    "mess1": "Witam na mojej stronie, nie krępuj się, poklikaj trochę!\nZapraszam do przejrzenia moich projektów.",
+    "button": "Zajrzyj tutaj!"
+  },
+  "Projects": {
+    "title": "Wybrane projekty",
+    "ArchFolio": "Pierwsza kroki w pisaniu stron www\npoczątek przygody z podstawami HTML, CSS oraz JavaScript.\nJest to osobiste portfolio z projektami związanymi z architekturą.",
+    "Weather App v1": "Pierwsza próba stworzenia aplikacji pogodowej, stworzona zgodnie z tutorialem DevEd`a, przy użyciu HTML, CSS oraz JavaScript",
+    "Weather App v2": "Druga wersja aplikacji pogodowej.\nNa podstawie zapytania użytkownika pobiera dokładne informacje o pogodzie w konkretnym mieście.\nKorzysta z zewnętrznego API, powstała przy użyciu HTML, CSS, JavaScript oraz React",
+    "Recipe App": "Nie wiesz jak coś ugotować? Recipe App pomoże Ci znaleźć odpowiedni przepis.\nAplikacja korzysta z zewnętrznego API, na podstawie zapytania użytkownika, proponuje różne warianty wskazaneog dania\nTechnologie: HTML, CSS, JavaScript oraz React",
+    "Money Goals App": "Aplikacja służąca do monitorowania swoich wydatków,\npostaw sobie cele i miej kontrolę nad swoimi oszczędnościami!\nAplikacja korzysta z lokalnej pamięci przeglądarki.\nNapisana z użyciem HTML, CSS, JavaScript oraz React.",
+    "LetsTalk": "Jeśli masz ochotę zrealizować razem wspólny projekt\nchcesz pogadać o grach lub po prostu się przywitać\nzapraszam do kontaktu!"
+  },
+  "About": {
+    "title": "O mnie",
+    "description": "Cześć, nazywam się Igor. Uważam się za ambitnego i zdeterminowanego programistę. Poznawanie nowych technologii to wyzwania, które sprawiają mi przyjemność i satysfakcję. Wolny czas poświęcam na zgłębianie kolejnych zagadnień, staram się poszerzać swoje umiejętności każdego dnia.\nAktualnie piszę w czystym JavaScript oraz korzystam z biblioteki React\nW tym kierunku chcę się rozwijać i wiążę z nim swoją najbliższą przyszłość.\nDobrze czuję się w projektowaniu UI swoich aplikacji oraz stylizacji komponentów w CSS. Nie wykluczam, w przyszłości chciałbym zostać full stack deweloperem.\nJestem samoukiem, wiedzę czerpię głównie z tworzenia projektów i rozwiązywania napotkanych problemów. Czytam też dużo dokumentacji, elementarna znajomość języka pomaga w świadomym programowaniu.\nMimo braku doświadczenia komercyjnego, wierzę, że praca w większym zespole pozwoli mi rozwinąć skrzydła i pokazać na co mnie stać.",
+    "backHome": "wróć na start",
+    "backProjects": "sprawdź moje projekty",
+    "backContact": "skontaktuj się ze mną!"
+  },
+  "Contact": {
+    "title": "Skontaktuj się ze mną",
+    "TopText": "MASZ",
+    "RotateText": "PYTANIE",
+    "RotateText2": "ZLECENIE",
+    "RotateText3": "PIWO",
+    "RotateText4": "MNIE",
+    "name": "Podaj swoje imię",
+    "email": "Wprowadź poprawny e-mail",
+    "message": "Twoja wiadomość",
+    "submit": "Wyślij",
+    "thanks": "Dziękuję za wiadomość!",
+    "error": "Ups, coś poszło nie tak..."
+  }
+}

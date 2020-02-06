@@ -1,0 +1,47 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "NavInfo": {
+    "title": "Socials"
+  },
+  "Home": {
+    "title": "IGOR BIEDRAWA",
+    "subtitle": "Front End Developer | Designer | Architect",
+    "mess1": "Welcome on my personal site, feel free to rumble around a little bit!\nI encourage you to check my latest projects.",
+    "button": "Let's take a peak!"
+  },
+  "Projects": {
+    "title": "Selected projects",
+    "ArchFolio": "My first full self-made project\nSingle page application, with review of my architectural work.\nMade with pure HTML, CSS and just a tiny touch of JavaScript",
+    "Weather App v1": "First, simplistic version of Weather App, it provides basic information about temperature and weather condtitions depending on your location.\nMade with HTML, CSS and JavaScript",
+    "Weather App v2": "Second version of Weather App, you can look out for an exact town and receive more detailed info about weather conditions.\nMade with HTML, CSS, JavaScript and React.",
+    "Recipe App": "Web app, that fetches meal recipes from external API. \nMade with HTML, CSS, JavaScript and React",
+    "Money Goals App": "Web app, which allows you to control how much of your savings you want to allocate on your particular needs\nStack: HTML, CSS+Bootstrap, JavaScript and React.\nYou can manage your goals since app is using localStorage to save your entries",
+    "LetsTalk": "Feel free to reach out whether you're interested in working together,\ntalk about games or just want to say hi."
+  },
+  "About": {
+    "title": "About me",
+    "description": "Hey there! I think of myself as an ambitious and determined web developer\nGetting to know new technologies is a challenge that gives me a lot of satisfaction.\nI am trying to improve my skills every day, currently I am working in and trying to master pure JavaScript and React framework. I feel quite good with designing UI of my applications and styling components in CSS.\nI'm excited about diving in into back-end territory someday, always wanted to be a fullstack guy. I am self-taught, I mainly draw knowledge from creating projects and solving encountered problems. I also read a lot of documentation, elementary knowledge of language helps in conscious programming. I believe that working in a more experienced team will allow me to spread my wings and prove that I can be a valuable asset in your firm.",
+    "backHome": "cut it & go back home.",
+    "backProjects": "check my projects again!",
+    "backContact": "contact me!"
+  },
+  "Contact": {
+    "title": "Get in touch with me",
+    "TopText": "HAVE A",
+    "RotateText": "QUESTION",
+    "RotateText2": "PROJECT",
+    "RotateText3": "DOG",
+    "RotateText4": "NICE DAY",
+    "name": "Full Name",
+    "email": "Enter your valid e-mail",
+    "message": "Your Message",
+    "submit": "Send",
+    "thanks": "Thanks for your message!",
+    "error": "Ups, sorry! Something went wrong..."
+  }
+}
