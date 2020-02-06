@@ -54,6 +54,8 @@ function Contact() {
           name={t("Contact.name")}
           email={t("Contact.email")}
           message={t("Contact.message")}
+          success={t("Contact.thanks")}
+          error={t("Contact.error")}
         />
       </div>
     </section>

@@ -12,8 +12,7 @@
     "title": "IGOR BIEDRAWA",
     "subtitle": "Front End Developer | Designer | Architect",
     "mess1": "Welcome on my personal site, feel free to rumble around a little bit!\nI encourage you to check my latest projects.",
-    "button": "Let's take a peak!",
-    "back": "Cut it, go home."
+    "button": "Let's take a peak!"
   },
   "Projects": {
     "title": "Selected projects",
@@ -26,9 +25,10 @@
   },
   "About": {
     "title": "About me",
-    "description": "Hey there! I think of myself as an ambitious and determined web developer\nGetting to know new technologies is a challenge that gives me a lot of satisfaction.\nI'm trying to improve my skills every day, currently I'm working in and trying to master pure JavaScript and React framework. I feel quite good with designing UI of my applications and styling components in CSS.\nI'm excited about diving in into back-end territory someday, always wanted to be a fullstack guy. I am self-taught, I mainly draw knowledge from creating projects and solving encountered problems. I also read a lot of documentation, elementary knowledge of language helps in conscious programming. I believe that working in a more experienced team will allow me to spread my wings and prove that I can be a valuable asset in your firm.",
-    "backProjects": "Check projects again!",
-    "backContact": "Contact me!"
+    "description": "Hey there! I think of myself as an ambitious and determined web developer\nGetting to know new technologies is a challenge that gives me a lot of satisfaction.\nI am trying to improve my skills every day, currently I am working in and trying to master pure JavaScript and React framework. I feel quite good with designing UI of my applications and styling components in CSS.\nI'm excited about diving in into back-end territory someday, always wanted to be a fullstack guy. I am self-taught, I mainly draw knowledge from creating projects and solving encountered problems. I also read a lot of documentation, elementary knowledge of language helps in conscious programming. I believe that working in a more experienced team will allow me to spread my wings and prove that I can be a valuable asset in your firm.",
+    "backHome": "cut it & go back home.",
+    "backProjects": "check my projects again!",
+    "backContact": "contact me!"
   },
   "Contact": {
     "title": "Get in touch with me",
@@ -40,6 +40,8 @@
     "name": "Full Name",
     "email": "Enter your valid e-mail",
     "message": "Your Message",
-    "submit": "Send"
+    "submit": "Send",
+    "thanks": "Thanks for your message!",
+    "error": "Ups, sorry! Something went wrong..."
   }
 }

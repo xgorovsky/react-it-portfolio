@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap");
-
-$primary-color: #fdb813;
-$dark-theme: #202020;
-$light-theme: #dfd9e9;
-$rwd: "screen and (max-width: 800px)";
-$card-font: "Raleway", sans-serif;
+@import "variables";
 
 //do zrobienia animacja podjezdzania karty do góry i reveal github//live
 .card {

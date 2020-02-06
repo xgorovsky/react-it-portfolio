@@ -1,7 +1,4 @@
-$primary-color: #fdb813;
-$dark-theme: #202020;
-$light-theme: #dfd9e9;
-$rwd: "screen and (max-width: 1025px)";
+@import "variables";
 
 .cool-btn {
   font-family: "Muli", sans-serif;

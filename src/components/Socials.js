@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { FaGithub, FaFacebook, FaLinkedinIn } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import "./css/Socials.scss";
@@ -35,13 +34,13 @@ export default function Socials(props) {
       >
         <FaLinkedinIn />
       </a>
-      <Link
-        to="/contact"
+      <a
+        href="mailto:biedrawa.igor@gmail.com"
         style={color ? { color: color } : null}
         className="card-socials"
       >
         <IoIosMail />
-      </Link>
+      </a>
     </div>
   );
 }

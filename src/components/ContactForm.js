@@ -1,11 +1,13 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 
 export default function ContactForm(props) {
   const [inputName, setInputName] = useState("");
   const [inputEmail, setInputEmail] = useState("");
   const [inputMessage, setInputMessage] = useState("");
-  const { send, label, name, email, message } = props;
-  let myForm = useRef(null);
+  const [status, setStatus] = useState("");
+
+  const { error, success, send, label, name, email, message } = props;
+
   const onNameChange = e => {
     setInputName(e.target.value);
   };
@@ -16,25 +18,33 @@ export default function ContactForm(props) {
     setInputMessage(e.target.value);
   };
 
-  const resetState = () => {
-    setInputEmail("");
-    setInputName("");
-    setInputMessage("");
-  };
-  const handleSubmit = e => {
-    e.preventDefault();
-    alert("Messege Sent");
-    myForm.current.reset();
-    resetState();
+
+  const handleSubmit = ev => {
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        setStatus("SUCCESS");
+      } else {
+        setStatus("ERROR");
+      }
+    };
+    xhr.send(data);
   };
 
   return (
     <div className="contact-form">
       <div className="form-container">
         <form
-          ref={myForm}
           onSubmit={handleSubmit}
-          action="submit"
+          action="https://formspree.io/xzbrgpln"
+          method="POST"
           className="form-wrapper"
         >
           <div className="form-title">
@@ -50,6 +60,7 @@ export default function ContactForm(props) {
             type="text"
             placeholder={name}
             className="name"
+            name="name"
             required
           />
           <label className="error"></label>
@@ -60,6 +71,7 @@ export default function ContactForm(props) {
             type="email"
             placeholder={email}
             className="email"
+            name="_replyto"
             required
           />
           <label className="error"></label>
@@ -72,10 +84,14 @@ export default function ContactForm(props) {
             required
             style={{ height: "330px", resize: "none", fontSize: "1rem" }}
           />
-          <label className="error"></label>
-          <button className="cool-btn" type="submit" value={send}>
-            {send}
-          </button>
+          {status === "SUCCESS" ? (
+            <div className="form-done">{success}</div>
+          ) : (
+              <button className="cool-btn" type="submit" value={send}>
+                {send}
+              </button>
+            )}
+          {status === "ERROR" && <div className="form-done">{error}</div>}
         </form>
       </div>
     </div>
